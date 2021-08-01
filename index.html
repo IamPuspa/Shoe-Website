@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Product Website</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <img src="./logo.png" class="logo" />
+        <div class="nav-icons">
+          <img src="./cart.png" class="nav-icons-logo" />
+          <img src="./search.png" class="nav-icons-logo" />
+          <img src="./menu.png" class="nav-icons-logo" />
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col-1">
+          <h1><span class="red-text">NIKE</span> SPORTS</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            obcaecati a illum <br />
+            repellendus iste! At?
+          </p>
+          <button class="btn">Explore more</button>
+        </div>
+        <div class="col-2">
+          <div class="feature-img">
+            <img src="./nike.png" id="NikeImg" />
+          </div>
+          <div class="small-feature-img">
+            <div class="small-img">
+              <img src="./nike.png" alt="" class="sl-img" />
+            </div>
+            <div class="small-img">
+              <img src="./nike-b.png" alt="" class="sl-img" />
+            </div>
+            <div class="small-img">
+              <img src="./nike-g.png" alt="" class="sl-img" />
+            </div>
+            <div class="small-img">
+              <img src="./nike-s.png" alt="" class="sl-img" />
+            </div>
+          </div>
+          <h2>NIKE</h2>
+        </div>
+      </div>
+    </div>
+    <script>
+    //   var NikeImg = document.getElementById("NikeImg");
+    //   var SmallImg = document.getElementsByClassName("sl-img");
+
+    //   SmallImg[0].onclick = function () {
+    //     NikeImg.src = SmallImg[0].src;
+    //   };
+    //   SmallImg[1].onclick = function () {
+    //     NikeImg.src = SmallImg[1].src;
+    //   };
+    //   SmallImg[2].onclick = function () {
+    //     NikeImg.src = SmallImg[2].src;
+    //   };
+    //   SmallImg[3].onclick = function () {
+    //     NikeImg.src = SmallImg[3].src;
+    //   };
+
+    var NikeImg = document.querySelector("#NikeImg");
+    var SmallImg = document.querySelectorAll(".sl-img");
+
+    SmallImg[0].addEventListener("click",function(){
+        NikeImg.setAttribute("src",SmallImg[0].getAttribute("src"));
+    });
+    SmallImg[1].addEventListener("click",function(){
+        NikeImg.setAttribute("src",SmallImg[1].getAttribute("src"));
+    });
+    SmallImg[2].addEventListener("click",function(){
+        NikeImg.setAttribute("src",SmallImg[2].getAttribute("src"));
+    });
+    SmallImg[3].addEventListener("click",function(){
+        NikeImg.setAttribute("src",SmallImg[3].getAttribute("src"));
+    });
+
+   
+    </script>
+  </body>
+</html>
